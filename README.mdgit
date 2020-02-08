@@ -1,0 +1,1 @@
+"# mean"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/Rabindra20/mean.gitgit push -u origin master
