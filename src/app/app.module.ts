@@ -7,13 +7,17 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { Header1Component } from './header1/header1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    Header1Component
   ],
   imports: [
     BrowserModule,

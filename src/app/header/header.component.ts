@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+isLogin;
+  constructor() {
+    this.isLogin =  localStorage.getItem('isLogin');
+   }
 
   ngOnInit() {
   }

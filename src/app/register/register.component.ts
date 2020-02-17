@@ -9,7 +9,7 @@ interface status {
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
- 
+ isLogin;
   constructor(private user: RegisterService) { }
 
   ngOnInit() {
