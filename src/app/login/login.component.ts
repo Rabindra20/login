@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
   login(user,pass){
     var uname = user.value;
     var passwd = pass.value;
-    this.user.login(uname,passwd).subscribe((data: status) => {
+    this.user.login(uname,passwd).subscribe((data:any) => {
       if(data.status == "success"){
         localStorage.setItem('isLogin','true');
         this.route.navigateByUrl('/home');

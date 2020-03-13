@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RegisterService } from '../register.service';
+import { Router } from '@angular/router';
 interface status {
   status : string
 }
@@ -10,7 +11,7 @@ interface status {
 })
 export class RegisterComponent implements OnInit {
  isLogin;
-  constructor(private user: RegisterService) { }
+  constructor(private user: RegisterService,private route:Router) { }
 
   ngOnInit() {
   }
@@ -23,8 +24,12 @@ export class RegisterComponent implements OnInit {
     this.user.register(uname,Fname,Contact,passwd).subscribe((data: status) => {
       if(data.status == "success")
       alert("register Successful");
-     
+      this.route.navigateByUrl('/home');
     });
   }
+  login(){
+    this.route.navigateByUrl('/login')
+  }
+  
 
 }

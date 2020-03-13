@@ -6,9 +6,19 @@
     <a class="navbar-brand" href="#">Hidden brand</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-            <li class="active" *ngIf="!isLogin" ><a  routerLink="/login">Login</a></li>
+            <!-- <li class="active" *ngIf="!isLogin" id="" ><a  routerLink="/login">Login</a></li>
             <li *ngIf="!isLogin" ><a routerLink="/signup">Register</a></li>
-            <li><a routerLink="/home">Home</a></li>       
-</ul>
+            <li *ngIf="isLogin"><a routerLink="/home">Home</a></li>     -->
+            <li class="active" >
+              <a class="nav-link" a routerLink="/home">Home</a>
+            </li>   
+
+            <li class="nav-item"  *ngIf="!isLogin">
+              <a class="nav-link"  routerLink="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"routerLink="/signup">Register</a>
+            </li>
+          </ul>   
 </div>
 </nav>
